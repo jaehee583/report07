@@ -1,11 +1,14 @@
-//네비 토글
+//메뉴 이벤트
 let mainNav = document.querySelector('.main-nav');
 let subNav = document.querySelector('.sub-nav');
 
 function displayMenu(){
     subNav.classList.toggle('active')
 }
-mainNav.addEventListener('click',displayMenu);
+mainNav.addEventListener('mouseover',displayMenu);
+mainNav.addEventListener('mouseout',displayMenu);
+subNav.addEventListener('mouseover',displayMenu);
+subNav.addEventListener('mouseout',displayMenu);
 
 
 //슬라이더
