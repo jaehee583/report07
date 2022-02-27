@@ -2,6 +2,15 @@
 let mainNav = document.querySelector('.main-nav');
 let subNav = document.querySelector('.sub-nav');
 
+// function displayMenu(){
+//     subNav.classList.add('active')
+// }
+// function hiddenMenu(){
+//     subNav.classList.remove('active')
+// }
+// mainNav.addEventListener('mouseenter',displayMenu);
+// subNav.addEventListener('mouseleave',hiddenMenu);
+
 function displayMenu(){
     subNav.classList.toggle('active')
 }
@@ -65,3 +74,13 @@ openBtn3.addEventListener("click",displayModal);
 openBtn4.addEventListener("click",displayModal);
 closeBtn.addEventListener("click",displayModal);
 modalBg.addEventListener("click",displayModal);
+
+
+//패밀리사이트
+let family = document.querySelector('.family');
+let fList = document.querySelector('.f-list');
+
+function familyToggle(){
+    family.classList.toggle("on")
+}
+family.addEventListener("click",familyToggle);

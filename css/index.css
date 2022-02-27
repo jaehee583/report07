@@ -214,6 +214,9 @@ ul,ol,li{
     justify-content:space-between;
     align-items:center;
 }
+.family{
+    position:relative;
+}
 .family p{
     padding:10px;
     border:1px solid #333;
@@ -222,3 +225,64 @@ ul,ol,li{
     background-color:#333;
     color:#fff;
 }
+.family.on .f-list{
+    display:block;
+}
+.family .f-list{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:calc(100% - 1px);
+    border:1px solid #666;
+    border-radius:2px;
+    background-color:#fff;
+    color:#222;
+    display:none;
+}
+.f-list li{
+    padding:10px;
+    cursor:pointer;
+    background-color:#333;
+    color:#fff;
+}
+.f-list li:hover{
+    background-color:#fff;
+    color:#333;
+}
+
+
+
+/*  */
+/* .footer .f-site{
+    position:absolute;
+    right:0;
+    top:0;
+    border:1px solid #666;
+    padding:10px 20px;
+    border-radius: 2px;
+    display:none;
+    cursor: pointer;
+}
+.footer .f-site:hover{
+    background-color:#333;
+    color:#fff;
+}
+.footer .f-site .f-list{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:calc(100% + 10px);
+    border:1px solid #666;
+    border-radius:2px;
+    background-color:#fff;
+    color:#222;
+    display:none;
+}
+
+.footer .f-site .f-list li{
+    padding:10px;
+}
+.footer .f-site .f-list li:hover{
+    background-color: #333;
+    color:#fff;
+} */
